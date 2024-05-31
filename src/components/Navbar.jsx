@@ -9,7 +9,6 @@ const NavBar = () => {
     }
     const theme = useSelector((state) => state.theme)
     const dispatch = useDispatch()
-    const btn = 'btn'
     return (
         <nav>
             <ul>
@@ -23,7 +22,7 @@ const NavBar = () => {
                         className={theme}
                         onClick={() => dispatch(changeTheme(theme))}
                     >
-                        Change Theme{' '}
+                        Change Theme
                     </button>
                 </li>
             </ul>
